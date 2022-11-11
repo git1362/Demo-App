@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\ApplicationService\UserManagement.Application\UserManagement.Application.csproj" />
+	  <ProjectReference Include="..\UserManagement.Persistence.ES\UserManagement.Persistence.ES.csproj" />
+	</ItemGroup>
+	
+</Project>
